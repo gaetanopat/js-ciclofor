@@ -1,0 +1,49 @@
+body{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+/* per tutto il container e posizionare le singole componenti una sotto l'altra */
+.container{
+  background-color: #d2d8e0;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to top right, #0099ff, #80ccff); /* verso destra in alto*/
+}
+/* per il titolo GIOCO DEI DADI */
+h1{
+  margin-top:0;
+  padding-top:20px;
+}
+/* per il container dei dadi e lasciare lo spazio tra i dadi */
+.dadi_container{
+  width:220px;
+  display: flex;
+  justify-content: space-between;
+}
+/* per i vari quadrati dei dadi e per centrare il loro contenuto */
+.first, .second, .third, .fourth{
+  width:100px;
+  height:100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* per impostare la grandezza del contenuto dei dadi */
+#first_content, #second_content, #third_content, #fourth_content{
+  font-size: 30px;
+}
+/* lascio un margine tra i adi e il totale dei punteggi e mettere il grassetto */
+#total_score1, #total_score2, #winner{
+  margin-top:20px;
+  font-weight: bold;
+}
+/* lascio un margine bottom tra totale Player 1  e il resto */
+#total_score1, #total_score2{
+  margin-bottom:20px;
+  font-style: italic;
+  color:#33475b;
+}
